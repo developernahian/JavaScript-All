@@ -1,0 +1,30 @@
+/*****************************
+ *        FOR 01.HTML        *
+ *  CHECK IMPORTANT KEYWORD  *
+ * TOTAL 2 IMPORTANT KEYWORD *
+ *****************************/
+
+
+
+   IMPORTANT: addEventListener
+    <!-- todo addEventListener () 2 ta jinis likhte hoy prothomta event and secontd ta function call ba function -->
+
+
+
+
+/******************************************************************
+ * DIFFERENCE BETWEEN ANONYMOUS AND NAMED FUNCTIONS IN JAVASCRIPT *
+ ******************************************************************/
+https://www.geeksforgeeks.org/difference-between-anonymous-and-named-functions-in-javascript/
+
+//Anonymous function
+function(){
+   // Function Body
+}
+
+//Named functions
+function displayMessage(){
+ // function..body
+}
+
+

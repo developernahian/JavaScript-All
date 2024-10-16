@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- todo query selector css er selector niye kaz kore as like css tagName, id, class with . # simble and attribute -->
+
+    <!-- NOTE: start
+    You can use querySelector to select elements by:
+
+    ID: #idName
+    Class: .className
+    Tag name: tagName
+    Attribute: [attribute=value]
+    
+    NOTE: end
+    -->
+
+    <!-- todo querySelector -->
+     <!-- todo querySelectorAll -->
+
+<!--  
+Short summery start
+Here's a breakdown of the return types for each of the methods you listed:
+
+getElementsByTagName():   returns an HTMLCollection
+getElementById():         returns a single Element object (not a collection)
+getElementsByClassName(): returns an HTMLCollection
+querySelector():          returns a single Element object (not a collection)
+querySelectorAll():       returns a NodeList
+
+So, to summarize:
+
+HTMLCollection:
+---------------
+getElementsByTagName()
+getElementsByClassName()
+
+
+NodeList:
+---------
+querySelectorAll()
+Single Element object:
+getElementById()
+querySelector()
+
+
+Note that HTMLCollection and NodeList are both array-like objects, but they have some differences in terms of their behavior and the types of nodes they can contain, as I mentioned earlier.
+
+Short summery end
+-->
+
+    <header>
+        <h1 id="header-title">DOM</h1>
+    </header>
+    <main>
+        <section id="fruits-section">
+            <h1 id="fruit-title">Initial Fruits</h1>
+            <ul class="fruits-list">
+                <li class="fruit">Apple</li>
+                <li class="fruit">Banana</li>
+                <li class="fruit">Orange</li>
+                <li class="fruit">Mango</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h1>Initial Cars</h1>
+            <ul>
+                <li>BMW</li>
+                <li>Audi</li>
+                <li>Mercedes</li>
+                <li>Ford</li>
+            </ul>
+        </section>
+
+    </main>
+
+
+    <script>
+
+/*
+
+
+        /*
+        1. querySelector:
+        The querySelector method returns the first element that
+        matches a CSS selector within the document (or a specified element).
+        */
+
+        const someList2 = document.querySelector('.fruits-list li')
+        console.log(someList2);//<li class="fruit">Apple</li>
+        console.log(someList2.innerText);//Apple
+
+
+console.log("****************************************************");
+        /*
+        2. querySelectorAll:
+        The querySelectorAll method returns all elements that match a CSS selector as a static NodeList (which is similar to an array but not exactly an array).
+        */
+        const someList = document.querySelectorAll('#fruits-section li')//OR: fruits-list .fruit
+        console.log(someList);// [li.fruit, li.fruit, li.fruit, li.fruit]
+        for(const li of someList){
+            // console.log(li);
+            console.log(li.innerText);
+            
+            /*
+            Apple
+            Banana
+            Orange
+            Mango
+            */
+            
+        }
+
+    </script>
+
+
+</body>
+</html>
